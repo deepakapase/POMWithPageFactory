@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.POM.TestCases.LoginTest">
+      <class name="com.selenium.POM.TestCases.HomePageTest">
         <methods>
-          <include name="doLogin"/>
-          <include name="findFriend"/>
+          <include name="release"/>
+          <include name="init"/>
+          <include name="testAddToCardAndCheckOut"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.selenium.POM.TestCases.LoginTest -->
+      </class> <!-- com.selenium.POM.TestCases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

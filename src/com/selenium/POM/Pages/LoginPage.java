@@ -10,27 +10,31 @@ import com.selenium.POM.Base.BasePage;
 import com.selenium.POM.Util.POMConstatns;
 
 public class LoginPage extends BasePage {
-//	WebDriver driver;
-//	By uName=By.xpath(".//*[@id='login1']");
-//	By password=By.xpath(".//*[@id='password']");
-//	By login=By.xpath("//input[@name='proceed']");
-	@FindBy(xpath=POMConstatns.USERNAME)
+
+  public static final String USERNAME = ".//*[@id='ap_email']";
+  public static final String PASSWORD = ".//*[@id='ap_password']";
+  public static final String LOGIN = ".//*[@id='signInSubmit']";
+
+	@FindBy(xpath = USERNAME)
 	public WebElement userName;
-	@FindBy(xpath=POMConstatns.PASSWORD)
+	@FindBy(xpath = PASSWORD)
 	public WebElement password;
-	@FindBy(xpath=POMConstatns.LOGIN)
+	@FindBy(xpath = LOGIN)
 	public WebElement login;
 
 	public LoginPage(WebDriver driver) {
-		
 		super(driver);
 	}
+
+	public LoginPage open() {
+	  getUrl(POMConstatns.LOGIN_URL);
+	  return this;
+	}
+
 	public HomePage doLogin(String uName,String pass){
-		System.out.println("username"+uName);
-		System.out.println(userName.getTagName());
 		userName.sendKeys(uName);
 		password.sendKeys(pass);
 		login.click();
-		return PageFactory.initElements(driver, HomePage.class);
+		return new HomePage(driver);
 	}
 }
