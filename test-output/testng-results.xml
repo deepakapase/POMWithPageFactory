@@ -2,28 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15345" started-at="2018-01-29T17:11:09Z" finished-at="2018-01-29T17:11:24Z">
+  <suite name="Default suite" duration-ms="20076" started-at="2018-02-02T18:45:05Z" finished-at="2018-02-02T18:45:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15345" started-at="2018-01-29T17:11:09Z" finished-at="2018-01-29T17:11:24Z">
-      <class name="com.selenium.POM.TestCases.HomePageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.POM.TestCases.HomePageTest@5b275dab]" name="init" is-config="true" duration-ms="4317" started-at="2018-01-29T09:11:09Z" finished-at="2018-01-29T09:11:13Z">
+    <test name="Default test" duration-ms="20076" started-at="2018-02-02T18:45:05Z" finished-at="2018-02-02T18:45:25Z">
+      <class name="com.selenium.POM.TestCases.CartTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.selenium.POM.TestCases.CartTest@523884b2]" name="init" is-config="true" duration-ms="2890" started-at="2018-02-02T10:45:05Z" finished-at="2018-02-02T10:45:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.selenium.POM.TestCases.HomePageTest@5b275dab]" name="login" is-config="true" duration-ms="2027" started-at="2018-01-29T09:11:13Z" finished-at="2018-01-29T09:11:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="testAddToCardAndCheckOut()[pri:0, instance:com.selenium.POM.TestCases.HomePageTest@5b275dab]" name="testAddToCardAndCheckOut" duration-ms="8970" started-at="2018-01-29T09:11:15Z" finished-at="2018-01-29T09:11:24Z">
+        <test-method status="PASS" signature="testAddToCardAndCheckOut()[pri:0, instance:com.selenium.POM.TestCases.CartTest@523884b2]" name="testAddToCardAndCheckOut" duration-ms="17158" started-at="2018-02-02T10:45:08Z" finished-at="2018-02-02T10:45:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddToCardAndCheckOut -->
-        <test-method status="PASS" signature="release()[pri:0, instance:com.selenium.POM.TestCases.HomePageTest@5b275dab]" name="release" is-config="true" duration-ms="0" started-at="2018-01-29T09:11:24Z" finished-at="2018-01-29T09:11:24Z">
+        <test-method status="PASS" signature="release()[pri:0, instance:com.selenium.POM.TestCases.CartTest@523884b2]" name="release" is-config="true" duration-ms="0" started-at="2018-02-02T10:45:25Z" finished-at="2018-02-02T10:45:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- release -->
-      </class> <!-- com.selenium.POM.TestCases.HomePageTest -->
+      </class> <!-- com.selenium.POM.TestCases.CartTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

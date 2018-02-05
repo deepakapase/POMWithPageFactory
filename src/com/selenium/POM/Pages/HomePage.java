@@ -12,12 +12,15 @@ public class HomePage extends BasePage{
 	
 	private static final String SEARCH_TEXT_BOX = ".//*[@id='twotabsearchtextbox']";
 	private static final String SEARCH_SUBMIT_BUTTON = "//*[@id='nav-search']/form/div[2]/div/input";
-
+	
+	private static final String CART="//a[@id='nav-cart']";
+	
 	@FindBy(xpath=SEARCH_TEXT_BOX)
 	public WebElement searchTextBox;
 	@FindBy(xpath=SEARCH_SUBMIT_BUTTON)
 	public WebElement searchSubmitButton;
-	
+	@FindBy(xpath=CART)
+	public WebElement cart;
 	public HomePage(WebDriver driver) {
 		super(driver);
 	}
@@ -31,6 +34,11 @@ public class HomePage extends BasePage{
 		searchTextBox.sendKeys(searchText);
 		searchSubmitButton.click();
 		return new SearchResultsPage(driver);
+	}
+	
+	public CartPage openCart(){
+		cart.click();
+		return new CartPage(driver);
 	}
 	
 }

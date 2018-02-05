@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.POM.TestCases.HomePageTest">
+      <class name="com.selenium.POM.TestCases.CartTest">
         <methods>
           <include name="release"/>
-          <include name="init"/>
           <include name="testAddToCardAndCheckOut"/>
-          <include name="login"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- com.selenium.POM.TestCases.HomePageTest -->
+      </class> <!-- com.selenium.POM.TestCases.CartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
